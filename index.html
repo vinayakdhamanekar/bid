@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benefit Intelligence &amp; Design | Health Chain</title>
+  <meta name="description" content="Operational cost, regulatory cost and the bid, connected on one platform. Every figure traces to the line it came from.">
+  <meta name="theme-color" content="#F4EFE8">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="frame">
+
+    <!-- ================= Header ================= -->
+    <!-- Same header as healthchain.com (components/Navbar.tsx in the Next.js site) -->
+    <header class="site-header" data-header>
+      <div class="nav-wrap">
+        <div class="nav-shell">
+          <a class="brand" href="https://www.healthchain.com/">
+            <img src="assets/logo.png" alt="Health Chain Logo" width="32" height="32">
+            <span>Health Chain</span>
+          </a>
+
+          <div class="nav-right">
+            <div class="nav-desktop">
+              <nav class="nav" aria-label="Main navigation">
+                <a class="nav-link" href="https://www.healthchain.com/platform">Platform</a>
+
+                <div class="has-menu" data-menu>
+                  <button class="nav-link nav-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+                    Solutions <span class="caret" aria-hidden="true">▾</span>
+                  </button>
+                  <div class="menu">
+                    <div class="menu-panel">
+                      <a href="https://www.healthchain.com/interoperability-and-compliance">
+                        <span class="menu-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"/></svg></span>
+                        <span class="menu-text"><strong>Interoperability &amp; Compliance</strong><small>A real compliance foundation.</small></span>
+                      </a>
+                      <a href="https://www.healthchain.com/longitudinal-data-enablement">
+                        <span class="menu-icon"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.47 5.4 5.78.58-4.36 3.98 1.24 5.74L12 16.9l-5.13 2.3 1.24-5.74-4.36-3.98 5.78-.58L12 3.5z"/></svg></span>
+                        <span class="menu-text"><strong>Longitudinal Data Enablement</strong><small>Every source. One longitudinal health record.</small></span>
+                      </a>
+                      <a href="https://www.healthchain.com/risk-adjustment">
+                        <span class="menu-icon"><svg viewBox="0 0 24 24"><path d="M8.5 3.5h7a1 1 0 011 1V6h1.5a1 1 0 011 1v13a1 1 0 01-1 1H6a1 1 0 01-1-1V7a1 1 0 011-1h1.5V4.5a1 1 0 011-1z"/><path d="M9 6.5h6"/><path d="M8.5 13l2.2 2.2L15.5 11"/></svg></span>
+                        <span class="menu-text"><strong>RiskRev Pro</strong><small>Make every risk adjustment coding decision easier to support.</small></span>
+                      </a>
+                      <a href="https://www.healthchain.com/benefit-intelligence-and-design" aria-current="page">
+                        <span class="menu-icon"><svg viewBox="0 0 24 24"><circle cx="5.5" cy="6" r="2"/><circle cx="18.5" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 7.3L11 16M17 7.3L13 16M7.5 6h9"/></svg></span>
+                        <span class="menu-text"><strong>Benefit Intelligence &amp; Design</strong><small>Design benefits with evidence, not guesswork.</small></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="has-menu" data-menu>
+                  <div class="nav-link nav-split">
+                    <a href="https://www.healthchain.com/resources">Resources</a>
+                    <button class="nav-trigger" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Expand Resources menu">
+                      <span class="caret" aria-hidden="true">▾</span>
+                    </button>
+                  </div>
+                  <div class="menu">
+                    <div class="menu-panel">
+                      <a href="https://www.healthchain.com/blogs">
+                        <span class="menu-icon"><svg viewBox="0 0 24 24"><path d="M4 20h4.5L19 9.5a2.1 2.1 0 00-3-3L5.5 17v3z"/><path d="M14.5 8l3 3"/><path d="M13 20h7"/></svg></span>
+                        <span class="menu-text"><strong>Blogs</strong><small>Practical guidance on CMS-0057-F, FHIR APIs, and payer data.</small></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="nav-link" href="https://www.healthchain.com/pricing">Pricing</a>
+                <a class="nav-link" href="https://www.healthchain.com/about">Company</a>
+              </nav>
+
+              <a class="nav-cta" href="https://www.healthchain.com/contact">
+                Request a Demo <span class="nav-cta-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu" data-nav-toggle>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path class="icon-open" d="M4 6h16M4 12h16M4 18h16"/>
+                <path class="icon-close" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+          <a class="m-row" href="https://www.healthchain.com/platform">Platform</a>
+
+          <div class="m-group" data-acc>
+            <div class="m-row">
+              <a href="https://www.healthchain.com/interoperability-and-compliance">Solutions</a>
+              <button class="m-toggle" type="button" aria-expanded="false" aria-label="Expand Solutions menu"><span aria-hidden="true">▾</span></button>
+            </div>
+            <div class="m-sub" hidden>
+              <a href="https://www.healthchain.com/interoperability-and-compliance">
+                <span class="menu-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.9" fill="currentColor" stroke="none"/></svg></span>
+                <span class="menu-text"><strong>Interoperability &amp; Compliance</strong><small>A real compliance foundation.</small></span>
+              </a>
+              <a href="https://www.healthchain.com/longitudinal-data-enablement">
+                <span class="menu-icon"><svg viewBox="0 0 24 24"><path d="M12 3.5l2.47 5.4 5.78.58-4.36 3.98 1.24 5.74L12 16.9l-5.13 2.3 1.24-5.74-4.36-3.98 5.78-.58L12 3.5z"/></svg></span>
+                <span class="menu-text"><strong>Longitudinal Data Enablement</strong><small>Every source. One longitudinal health record.</small></span>
+              </a>
+              <a href="https://www.healthchain.com/risk-adjustment">
+                <span class="menu-icon"><svg viewBox="0 0 24 24"><path d="M8.5 3.5h7a1 1 0 011 1V6h1.5a1 1 0 011 1v13a1 1 0 01-1 1H6a1 1 0 01-1-1V7a1 1 0 011-1h1.5V4.5a1 1 0 011-1z"/><path d="M9 6.5h6"/><path d="M8.5 13l2.2 2.2L15.5 11"/></svg></span>
+                <span class="menu-text"><strong>RiskRev Pro</strong><small>Make every risk adjustment coding decision easier to support.</small></span>
+              </a>
+              <a href="https://www.healthchain.com/benefit-intelligence-and-design" aria-current="page">
+                <span class="menu-icon"><svg viewBox="0 0 24 24"><circle cx="5.5" cy="6" r="2"/><circle cx="18.5" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M7 7.3L11 16M17 7.3L13 16M7.5 6h9"/></svg></span>
+                <span class="menu-text"><strong>Benefit Intelligence &amp; Design</strong><small>Design benefits with evidence, not guesswork.</small></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="m-group" data-acc>
+            <div class="m-row">
+              <a href="https://www.healthchain.com/resources">Resources</a>
+              <button class="m-toggle" type="button" aria-expanded="false" aria-label="Expand Resources menu"><span aria-hidden="true">▾</span></button>
+            </div>
+            <div class="m-sub" hidden>
+              <a href="https://www.healthchain.com/blogs">
+                <span class="menu-icon"><svg viewBox="0 0 24 24"><path d="M4 20h4.5L19 9.5a2.1 2.1 0 00-3-3L5.5 17v3z"/><path d="M14.5 8l3 3"/><path d="M13 20h7"/></svg></span>
+                <span class="menu-text"><strong>Blogs</strong><small>Practical guidance on CMS-0057-F, FHIR APIs, and payer data.</small></span>
+              </a>
+            </div>
+          </div>
+
+          <a class="m-row" href="https://www.healthchain.com/pricing">Pricing</a>
+          <a class="m-row" href="https://www.healthchain.com/about">Company</a>
+
+          <a class="nav-cta nav-cta-block" href="https://www.healthchain.com/contact">
+            Request a Demo <span class="nav-cta-arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+
+      <!-- ================= Hero ================= -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow eyebrow-light reveal">
+              <span>Solution</span><span aria-hidden="true">→</span><span>Benefit Intelligence &amp; Design</span>
+            </p>
+            <h1 id="hero-title" class="hero-title reveal" style="--d:80ms">
+              Government programs cost, <em>made traceable.</em>
+            </h1>
+            <p class="hero-lede reveal" style="--d:160ms">
+              Operational cost, regulatory cost and the bid, connected on one platform.
+              Every figure traces to the line it came from.
+            </p>
+            <div class="btn-row hero-actions reveal" style="--d:240ms">
+              <a class="btn btn-light btn-lg" href="https://www.healthchain.com/contact">
+                Book a demo <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-ghost-light btn-lg" href="#cost-walk">See the cost walk</a>
+              <a class="btn btn-light btn-lg" href="https://www.healthchain.com/contact">
+                Talk to our team <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Illustrative cost walk card (no figures) -->
+          <figure class="walk-card reveal" style="--d:320ms" data-tilt aria-label="Illustration of a cost walk from operational cost to the bid">
+            <div class="walk-card-head">
+              <span class="dot-row" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="mono">cost walk · outpatient surgery</span>
+              <span class="tag">Illustrative</span>
+            </div>
+            <ol class="walk-steps">
+              <li class="walk-step is-total">
+                <span class="walk-label">Operational cost</span>
+                <span class="walk-bar"><span style="--w:100%"></span></span>
+              </li>
+              <li class="walk-step">
+                <span class="walk-label">Share with no claim line</span>
+                <span class="walk-bar is-step"><span style="--x:78%;--w:22%"></span></span>
+              </li>
+              <li class="walk-step">
+                <span class="walk-label">Share priced by ratio</span>
+                <span class="walk-bar is-step"><span style="--x:64%;--w:14%"></span></span>
+              </li>
+              <li class="walk-step">
+                <span class="walk-label">Share at contract rate</span>
+                <span class="walk-bar is-step"><span style="--x:52%;--w:12%"></span></span>
+              </li>
+              <li class="walk-step is-residual">
+                <span class="walk-label">Remainder, reported</span>
+                <span class="walk-bar is-step"><span style="--x:48%;--w:4%"></span></span>
+              </li>
+              <li class="walk-step is-total is-bid">
+                <span class="walk-label">Bid</span>
+                <span class="walk-bar"><span style="--w:48%"></span></span>
+              </li>
+            </ol>
+            <figcaption class="walk-foot">
+              <span class="mono">by plan · by month</span>
+              <span>Each step named, nothing absorbed.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ================= Data tags ================= -->
+      <section class="tags" aria-label="Data the platform works with">
+        <div class="marquee" data-marquee>
+          <ul class="marquee-track">
+            <li>Encounters</li><li>Claims</li><li>Cost components</li><li>Capitation</li>
+            <li>Member months</li><li>CMS rate files</li><li>State rate sheets</li><li>Benefit grids</li>
+            <li>Risk scores (yours)</li><li>Service categories</li><li>Plan benefit packages</li>
+            <li>Bid worksheets</li><li>General ledger ties</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= Modules ================= -->
+      <section class="modules section" id="modules" aria-labelledby="modules-title">
+        <div class="modules-grid">
+          <aside class="modules-rail">
+            <div class="rail-sticky">
+              <p class="eyebrow reveal">The platform</p>
+              <h2 id="modules-title" class="h2 reveal" style="--d:60ms">Start in one module. <span class="accent">Draw on all six.</span></h2>
+              <p class="lede reveal" style="--d:120ms">A question that begins in operational cost usually ends in the bid.</p>
+              <ol class="rail-index" aria-label="Modules">
+                <li><a href="#operational-data" data-spy="operational-data"><span>01</span>Operational data</a></li>
+                <li><a href="#regulatory-data" data-spy="regulatory-data"><span>02</span>Regulatory data</a></li>
+                <li><a href="#cost-walk" data-spy="cost-walk"><span>03</span>Cost walk</a></li>
+                <li><a href="#forecasting" data-spy="forecasting"><span>04</span>Forecasting</a></li>
+                <li><a href="#scenarios" data-spy="scenarios"><span>05</span>Scenarios</a></li>
+                <li><a href="#outputs" data-spy="outputs"><span>06</span>Outputs</a></li>
+              </ol>
+            </div>
+          </aside>
+
+          <div class="module-list">
+
+            <article class="module reveal" id="operational-data" aria-labelledby="m1-title">
+              <header class="module-head">
+                <span class="module-num">01</span>
+                <span class="module-kicker">Operational data</span>
+              </header>
+              <h3 id="m1-title" class="h3">Start with what care costs to deliver.</h3>
+              <p class="module-lede">Your operational cost model, loaded as it is. Encounter lines, department cost, billed charges, service categories.</p>
+              <ul class="checks">
+                <li>One governed home for claims, encounters, enrollment, capitation and provider data</li>
+                <li>Configured to your data shape, not the other way round</li>
+                <li>Every load versioned, every rule change recorded</li>
+              </ul>
+              <div class="qa">
+                <p class="qa-q"><span class="qa-tag">Ask it</span><em>Which service lines carry cost that never reaches a claim?</em></p>
+                <p class="qa-a"><span class="qa-tag">Answer</span>A list by service category and place of service, with the lines behind each number.</p>
+              </div>
+              <a class="text-link" href="https://www.healthchain.com/contact">Investigate yourself <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="module reveal" id="regulatory-data" aria-labelledby="m2-title">
+              <header class="module-head">
+                <span class="module-num">02</span>
+                <span class="module-kicker">Regulatory data</span>
+              </header>
+              <h3 id="m2-title" class="h3">Then what the health plan books.</h3>
+              <p class="module-lede">Regulatory cost, the view the bid is built on. Uniform cost and contract rate on the same claim line.</p>
+              <ul class="checks">
+                <li>Both regulatory views carried on one row, switched by flag</li>
+                <li>Contract pricing for medical groups and hospitals shown as its own step</li>
+                <li>Cost components, schedules and roll-ups kept in your own names</li>
+              </ul>
+              <div class="qa">
+                <p class="qa-q"><span class="qa-tag">Ask it</span><em>How does uniform cost become contract cost for this plan this month?</em></p>
+                <p class="qa-a"><span class="qa-tag">Answer</span>A walk from one total to the other, each step named, nothing absorbed.</p>
+              </div>
+              <a class="text-link" href="https://www.healthchain.com/contact">Investigate yourself <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="module module-feature reveal" id="cost-walk" aria-labelledby="m3-title">
+              <header class="module-head">
+                <span class="module-num">03</span>
+                <span class="module-kicker">Cost walk</span>
+              </header>
+              <h3 id="m3-title" class="h3">The cost walk.</h3>
+              <p class="module-lede">Operations to regulatory to bid. The step most organisations cannot explain today.</p>
+              <ul class="checks">
+                <li>Matches encounter lines to claim lines on your keys</li>
+                <li>Three columns on every row: in one view only, in the other only, costed differently</li>
+                <li>Difference ledger with a reason and a method on every entry</li>
+                <li>Residual reported, never plugged</li>
+              </ul>
+              <div class="ledger" aria-hidden="true">
+                <div class="ledger-row ledger-head"><span>Row</span><span>In one view only</span><span>In the other only</span><span>Costed differently</span></div>
+                <div class="ledger-row"><span class="mono">line</span><span><i class="pip"></i></span><span></span><span></span></div>
+                <div class="ledger-row"><span class="mono">line</span><span></span><span></span><span><i class="pip"></i></span></div>
+                <div class="ledger-row"><span class="mono">line</span><span></span><span><i class="pip"></i></span><span></span></div>
+              </div>
+              <div class="qa">
+                <p class="qa-q"><span class="qa-tag">Ask it</span><em>Why is operational cost higher than the bid for outpatient surgery?</em></p>
+                <p class="qa-a"><span class="qa-tag">Answer</span>The share with no claim line, the share priced by ratio, the share at contract rate, and the remainder, by plan and month.</p>
+              </div>
+              <a class="text-link" href="https://www.healthchain.com/contact">See the cost walk <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="module reveal" id="forecasting" aria-labelledby="m4-title">
+              <header class="module-head">
+                <span class="module-num">04</span>
+                <span class="module-kicker">Forecasting</span>
+              </header>
+              <h3 id="m4-title" class="h3">Forecasting on governed data.</h3>
+              <p class="module-lede">Medicare and Medicaid, revenue and expense, with lineage on every projected number.</p>
+              <ul class="checks">
+                <li><strong>Medicare:</strong> benchmark revenue, risk-adjusted payment, rebate share, expense</li>
+                <li><strong>Medicaid:</strong> capitation revenue and expense by rate cell</li>
+                <li>Your trend, completion and morbidity assumptions, entered as inputs and kept with the run</li>
+              </ul>
+              <div class="qa">
+                <p class="qa-q"><span class="qa-tag">Ask it</span><em>What does next year look like if utilisation holds and the rate cut lands?</em></p>
+                <p class="qa-a"><span class="qa-tag">Answer</span>A projection you can open row by row.</p>
+              </div>
+              <a class="text-link" href="https://www.healthchain.com/contact">Investigate yourself <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="module reveal" id="scenarios" aria-labelledby="m5-title">
+              <header class="module-head">
+                <span class="module-num">05</span>
+                <span class="module-kicker">Scenarios</span>
+              </header>
+              <h3 id="m5-title" class="h3">Scenarios, not decisions.</h3>
+              <p class="module-lede">Change a price, a benefit, a rate. See margin and cost move. Decide elsewhere.</p>
+              <ul class="checks">
+                <li>What-if runs on the same governed data as the actuals</li>
+                <li>Side by side with last year's filed position</li>
+                <li>Nothing is submitted from here</li>
+              </ul>
+              <div class="qa">
+                <p class="qa-q"><span class="qa-tag">Ask it</span><em>What happens to margin if the copay changes on specialist visits?</em></p>
+                <p class="qa-a"><span class="qa-tag">Answer</span>The cost and revenue effect by plan, with the assumptions listed.</p>
+              </div>
+              <a class="text-link" href="https://www.healthchain.com/contact">Investigate yourself <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="module reveal" id="outputs" aria-labelledby="m6-title">
+              <header class="module-head">
+                <span class="module-num">06</span>
+                <span class="module-kicker">Outputs</span>
+              </header>
+              <h3 id="m6-title" class="h3">Feeds out, not locked in.</h3>
+              <p class="module-lede">Structured outputs to the tools your teams already use.</p>
+              <ul class="checks">
+                <li>Enterprise performance management, cost accounting, Power BI, Excel</li>
+                <li>Your bid and benefit pipelines keep producing the filings</li>
+                <li>Role-based access, end-to-end audit trail, rule approval with a reason</li>
+              </ul>
+              <a class="text-link" href="https://www.healthchain.com/contact">Investigate yourself <span aria-hidden="true">→</span></a>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= The connection ================= -->
+      <section class="connection section-dark" aria-labelledby="connection-title">
+        <div class="conn-glow" aria-hidden="true"></div>
+        <div class="section-inner">
+          <div class="conn-head">
+            <p class="eyebrow eyebrow-terra reveal">The connection</p>
+            <h2 id="connection-title" class="h2 reveal" style="--d:60ms">Three views. <span class="accent">One walk between them.</span></h2>
+          </div>
+
+          <ol class="chain" data-chain>
+            <li class="chain-node reveal" style="--d:100ms">
+              <span class="chain-step mono" aria-hidden="true">01</span>
+              <span class="chain-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M9 4h6a1 1 0 011 1v1h2a1 1 0 011 1v12a1 1 0 01-1 1H6a1 1 0 01-1-1V7a1 1 0 011-1h2V5a1 1 0 011-1z"/><path d="M12 10v6M9 13h6"/></svg>
+              </span>
+              <span class="chain-kicker mono">Encounter</span>
+              <p>Operational cost is recorded on the encounter.</p>
+            </li>
+            <li class="chain-link" aria-hidden="true">
+              <span class="chain-track"></span>
+              <span class="chain-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </li>
+            <li class="chain-node reveal" style="--d:220ms">
+              <span class="chain-step mono" aria-hidden="true">02</span>
+              <span class="chain-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M4 14h16M10 4v16"/></svg>
+              </span>
+              <span class="chain-kicker mono">Claim</span>
+              <p>Regulatory cost is spread over the claim.</p>
+            </li>
+            <li class="chain-link" aria-hidden="true">
+              <span class="chain-track"></span>
+              <span class="chain-arrow"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </li>
+            <li class="chain-node reveal" style="--d:340ms">
+              <span class="chain-step mono" aria-hidden="true">03</span>
+              <span class="chain-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4M9 12h7M9 16h5"/></svg>
+              </span>
+              <span class="chain-kicker mono">Bid</span>
+              <p>The bid is built on a defined slice of the regulatory view.</p>
+            </li>
+          </ol>
+          <div class="chain-base reveal" style="--d:420ms">
+            <div class="chain-stems" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p class="chain-foot">
+              <span class="chain-base-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+              The platform holds all three and the walk between them.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Real question ================= -->
+      <section class="section" id="first-month" aria-labelledby="first-month-title">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="eyebrow reveal">The first month</p>
+            <h2 id="first-month-title" class="h2 reveal" style="--d:60ms">Give the platform a real question.</h2>
+            <p class="lede reveal" style="--d:120ms">Four things it answers in the first month on a new market.</p>
+          </div>
+          <ol class="card-grid four">
+            <li class="card reveal" style="--d:0ms">
+              <span class="card-num">01</span>
+              <h3 class="h4">Tie the books.</h3>
+              <p>Loaded operational and regulatory cost against your certified reports, to the cent.</p>
+            </li>
+            <li class="card reveal" style="--d:90ms">
+              <span class="card-num">02</span>
+              <h3 class="h4">Name the gap.</h3>
+              <p>The difference between the two views, by service category, plan and month, each driver named.</p>
+            </li>
+            <li class="card reveal" style="--d:180ms">
+              <span class="card-num">03</span>
+              <h3 class="h4">Trace a figure.</h3>
+              <p>Any number on any screen, back to the member-level records you provided.</p>
+            </li>
+            <li class="card reveal" style="--d:270ms">
+              <span class="card-num">04</span>
+              <h3 class="h4">Prove it again.</h3>
+              <p>The next month, the same rules, the restatement explained.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= Learns your rules ================= -->
+      <section class="section section-tint" aria-labelledby="rules-title">
+        <div class="section-inner split">
+          <div class="split-copy">
+            <p class="eyebrow reveal">Configuration</p>
+            <h2 id="rules-title" class="h2 reveal" style="--d:60ms">Yes, the platform <span class="accent">learns your rules.</span></h2>
+            <p class="lede reveal" style="--d:120ms">Your matching keys. Your service category roll-ups. Your contract pricing. Your timing between cost runs and accounting periods.</p>
+          
+            
+            <a class="btn btn-primary btn-lg reveal" style="--d:180ms; margin-top: 30px;" href="https://www.healthchain.com/contact">
+              Book a demo <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+          <ol class="timeline" aria-label="How rules are governed">
+            <li class="reveal" style="--d:80ms"><span class="tl-dot"></span><strong>Captured</strong><span>as configuration</span></li>
+            <li class="reveal" style="--d:180ms"><span class="tl-dot"></span><strong>Confirmed</strong><span>by your finance team before anything runs</span></li>
+            <li class="reveal" style="--d:280ms"><span class="tl-dot"></span><strong>Frozen</strong><span>before testing</span></li>
+            <li class="reveal" style="--d:380ms"><span class="tl-dot"></span><strong>Versioned</strong><span>after</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= Ways to work ================= -->
+      <section class="section" id="ways-to-work" aria-labelledby="ways-title">
+        <div class="section-inner">
+          <div class="section-head section-head-row">
+            <div>
+              <p class="eyebrow reveal">Engagement</p>
+              <h2 id="ways-title" class="h2 reveal" style="--d:60ms">Ways to work with Health Chain.</h2>
+            </div>
+            <a class="btn btn-outline reveal" style="--d:120ms" href="https://www.healthchain.com/contact">Talk to our team <span class="btn-arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div class="card-grid four">
+            <article class="card card-lift reveal">
+              <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0112 2.5a7 7 0 017 7C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+              <h3 class="h4">Onboard a market.</h3>
+              <p>One region, both views, the walk, acceptance against your certified reports.</p>
+              <p class="card-meta mono">12 to 16 weeks from data receipt</p>
+            </article>
+            <article class="card card-lift reveal" style="--d:90ms">
+              <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/><path d="M17 3v6M14 6h6"/></svg></span>
+              <h3 class="h4">Add the next market.</h3>
+              <p>Same configuration, your election, one at a time or in waves.</p>
+            </article>
+            <article class="card card-lift reveal" style="--d:180ms">
+              <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+              <h3 class="h4">Add a line of business.</h3>
+              <p>Medicare Advantage and Medicaid are first class. Both on one stack.</p>
+            </article>
+            <article class="card card-lift reveal" style="--d:270ms">
+              <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5M9.5 9a2 2 0 113 1.7c-.7.4-1 .8-1 1.6M11.5 14.5v.01"/></svg></span>
+              <h3 class="h4">Run a question.</h3>
+              <p>Your data, our platform, one answer with its sources.</p>
+              <p class="card-meta mono">Priced per job</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= How it works ================= -->
+      <section class="section section-tint" id="how-it-works" aria-labelledby="how-title">
+        <div class="section-inner">
+          <div class="section-head center">
+            <p class="eyebrow reveal">How it works</p>
+            <h2 id="how-title" class="h2 reveal" style="--d:60ms">Connect. Configure. Trace.</h2>
+          </div>
+          <ol class="steps" data-steps>
+            <li class="step reveal">
+              <span class="step-num">1</span>
+              <h3 class="h4">Connect.</h3>
+              <p>You de-identify and upload. We never connect to your systems directly.</p>
+            </li>
+            <li class="step reveal" style="--d:120ms">
+              <span class="step-num">2</span>
+              <h3 class="h4">Configure.</h3>
+              <p>Your rules, in your names, confirmed by your subject matter expert before configuration.</p>
+            </li>
+            <li class="step reveal" style="--d:240ms">
+              <span class="step-num">3</span>
+              <h3 class="h4">Trace.</h3>
+              <p>Every figure opens to the lines behind it. Every run keeps its inputs, rules and cost run.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ================= What stays with you ================= -->
+      <section class="section" aria-labelledby="stays-title">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="eyebrow reveal">What stays with you</p>
+            <h2 id="stays-title" class="h2 reveal" style="--d:60ms">We give you the foundation. <span class="accent">You keep the decisions.</span></h2>
+            <p class="lede reveal" style="--d:120ms">The platform does not originate your allocation rules. It makes them repeatable, auditable and versioned.</p>
+          </div>
+          <div class="ownership">
+            <div class="own-col own-platform reveal">
+              <p class="own-label mono">The platform</p>
+              <ul>
+                <li>Repeatable</li>
+                <li>Auditable</li>
+                <li>Versioned</li>
+              </ul>
+            </div>
+            <div class="own-col own-you reveal" style="--d:120ms">
+              <p class="own-label mono">Stays with you</p>
+              <ul class="checks">
+                <li>Bid preparation, certification and submission stay with your actuaries</li>
+                <li>Risk scores come from your models</li>
+                <li>Benefit design is your decision</li>
+                <li>Trend and completion assumptions are yours, entered and kept with the run</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Security ================= -->
+      <section class="section section-dark security" id="security" aria-labelledby="security-title">
+        <div class="section-inner">
+          <div class="section-head">
+            <p class="eyebrow eyebrow-terra reveal">Security</p>
+            <h2 id="security-title" class="h2 reveal" style="--d:60ms">Your instance. <span class="accent">Your access list.</span></h2>
+          </div>
+
+          <div class="sec-layout">
+            <!-- Illustration of the five points below (decorative; the list carries the content) -->
+            <figure class="sec-visual reveal" style="--d:80ms" aria-hidden="true">
+              <div class="sv-gate">
+                <span class="sv-chip">
+                  <span class="sv-chip-icon"><svg viewBox="0 0 24 24"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9M16 6l3 3M14 8l2 2"/></svg></span>
+                  Your identity provider
+                </span>
+                <span class="sv-people"><i></i><i></i><i></i><b class="mono">approved list</b></span>
+              </div>
+              <div class="sv-flow"><span></span></div>
+              <div class="sv-instance">
+                <div class="sv-instance-head">
+                  <span class="sv-lock"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span>
+                  <span class="mono">single-customer instance</span>
+                  <span class="sv-tag mono">US region</span>
+                </div>
+                <div class="sv-envs">
+                  <div class="sv-env"><span class="mono">Test</span><i class="sv-bar"></i><i class="sv-bar is-short"></i></div>
+                  <div class="sv-env is-prod"><span class="mono">Production</span><i class="sv-bar"></i><i class="sv-bar is-short"></i></div>
+                </div>
+                <div class="sv-data">
+                  <span class="mono">member_id</span>
+                  <span class="sv-hash mono">#&thinsp;9f3a…c21e</span>
+                  <span class="sv-pill mono">de-identified</span>
+                </div>
+              </div>
+              <div class="sv-log">
+                <span class="mono">audit · lineage · access</span>
+                <span class="sv-log-lines"><i></i><i></i><i></i></span>
+              </div>
+            </figure>
+
+            <ul class="sec-list">
+              <li class="sec-item reveal">
+                <span class="sec-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></span>
+                <div>
+                  <h3 class="sec-title">Dedicated instance</h3>
+                  <p>Dedicated single-customer instance, United States regions, separate test and production</p>
+                </div>
+              </li>
+              <li class="sec-item reveal" style="--d:80ms">
+                <span class="sec-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+                <div>
+                  <h3 class="sec-title">De-identified data</h3>
+                  <p>De-identified data only, hashed member identifier, no direct connection to your systems</p>
+                </div>
+              </li>
+              <li class="sec-item reveal" style="--d:160ms">
+                <span class="sec-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-9M16 6l3 3M14 8l2 2"/></svg></span>
+                <div>
+                  <h3 class="sec-title">Your sign-in</h3>
+                  <p>Sign-in through your identity provider</p>
+                </div>
+              </li>
+              <li class="sec-item reveal" style="--d:240ms">
+                <span class="sec-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16M4 10h10M4 15h16M4 20h8"/></svg></span>
+                <div>
+                  <h3 class="sec-title">Full audit trail</h3>
+                  <p>Audit, lineage and access logs inside the platform</p>
+                </div>
+              </li>
+              <li class="sec-item reveal" style="--d:320ms">
+                <span class="sec-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5M16 11l2 2 4-4"/></svg></span>
+                <div>
+                  <h3 class="sec-title">Your access list</h3>
+                  <p>Named personnel under your approved access list</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= For ================= -->
+      <section class="section audience" aria-labelledby="for-title">
+        <div class="section-inner">
+          <h2 id="for-title" class="eyebrow reveal">Built for</h2>
+          <ul class="audience-list">
+            <li class="reveal">Government programs finance</li>
+            <li class="reveal" style="--d:60ms">Medicare Advantage actuarial</li>
+            <li class="reveal" style="--d:120ms">Medicaid finance</li>
+            <li class="reveal" style="--d:180ms">Integrated delivery systems</li>
+            <li class="reveal" style="--d:240ms">Health plan analytics</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= Closing CTA ================= -->
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="closing-bg" aria-hidden="true"></div>
+        <div class="closing-inner">
+          <h2 id="closing-title" class="closing-title reveal">Start with one market.</h2>
+          <p class="hero-lede reveal" style="--d:80ms">Your operational cost, your regulatory cost, your bid, connected and traceable.</p>
+          <div class="btn-row center reveal" style="--d:160ms">
+            <a class="btn btn-light btn-lg" href="https://www.healthchain.com/contact">Book a demo <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost-light btn-lg" href="https://www.healthchain.com/contact">Talk to our team</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <!-- Same footer as healthchain.com (components/Footer.tsx in the Next.js site) -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Health Chain Logo" width="62" height="62">
+          <span>Health Chain</span>
+        </div>
+        <p class="footer-tag">The data readiness layer healthcare has been missing.</p>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-legal-col">
+          <p class="footer-copy">© <span data-year>2026</span> Health Chain. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="https://www.healthchain.com/privacy">Privacy</a>
+            <a href="https://www.healthchain.com/terms-of-use">Terms</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/company/health-chain-io" target="_blank" rel="noopener noreferrer" aria-label="Health Chain on LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@healthchain6081" target="_blank" rel="noopener noreferrer" aria-label="Health Chain on YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3.02 3.02 0 00-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.51A3.02 3.02 0 00.5 6.2C0 8.08 0 12 0 12s0 3.92.5 5.8a3.02 3.02 0 002.12 2.14c1.88.51 9.38.51 9.38.51s7.5 0 9.38-.51a3.02 3.02 0 002.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.8zM9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Platform">
+          <p class="footer-heading">PLATFORM</p>
+          <a href="https://www.healthchain.com/platform#capture">Capture</a>
+          <a href="https://www.healthchain.com/platform#curate">Curate</a>
+          <a href="https://www.healthchain.com/platform#consume">Consume</a>
+        </nav>
+        <nav class="footer-col" aria-label="Solutions">
+          <p class="footer-heading">SOLUTIONS</p>
+          <a href="https://www.healthchain.com/interoperability-and-compliance">Interoperability &amp; Compliance</a>
+          <a href="https://www.healthchain.com/longitudinal-data-enablement">Longitudinal Data Enablement</a>
+          <a href="https://www.healthchain.com/risk-adjustment">RiskRev Pro</a>
+          <a href="https://www.healthchain.com/benefit-intelligence-and-design">Benefit Intelligence &amp; Design</a>
+        </nav>
+        <nav class="footer-col" aria-label="Resources">
+          <p class="footer-heading">RESOURCES</p>
+          <a href="https://www.healthchain.com/resources#regulatory-briefs">Regulatory Briefs</a>
+          <a href="https://www.healthchain.com/resources#case-studies">Case Studies</a>
+          <a href="https://www.healthchain.com/resources#whitepapers">Whitepapers</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company">
+          <p class="footer-heading">COMPANY</p>
+          <a href="https://www.healthchain.com/about">About</a>
+          <a href="https://www.healthchain.com/careers">Careers</a>
+          <a href="https://www.healthchain.com/contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
